@@ -1,0 +1,45 @@
+id: https://github.com/ICICLE-ai/CI-Components-Catalog/ci-components.yaml
+name: icicle-ci-component
+prefixes:
+  linkml: https://w3id.org/linkml/
+imports:
+  - linkml:types
+default_range: string
+  
+classes:
+    Component:
+        attributes:
+            id:
+            name:
+            status:
+            website:
+            description:
+            createdBy:
+            primaryThrust:
+            sourceCodeUrl:
+            targetIcicleRelease:
+            license:
+            releaseNotesUrl:
+            doi:
+            citation:
+            pypiPackage:
+            containerImage:
+            hpcModule:
+            unixPackage:
+            rustCrate:
+            javaJar:
+            artifactOther:
+            codeReviewConducted:
+            testsWritten:
+            securityReviewConducted:
+            biasAssessmentConducted:
+            usageDocumentationAvailable:
+            usageDocumentationUrl:
+            developerDocumentationAvailable:
+            developerDocumentationUrl:
+            trainingTutorialsAvailable:
+            trainingTutorialsUrl:
+            usageMetricsCollected:
+            publicAccess:
+
+

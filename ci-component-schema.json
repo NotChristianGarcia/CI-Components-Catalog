@@ -1,0 +1,116 @@
+{
+    "$defs": {
+        "Component": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "artifactOther": {
+                    "type": "string"
+                },
+                "biasAssessmentConducted": {
+                    "type": "string"
+                },
+                "citation": {
+                    "type": "string"
+                },
+                "codeReviewConducted": {
+                    "type": "string"
+                },
+                "containerImage": {
+                    "type": "string"
+                },
+                "createdBy": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "developerDocumentationAvailable": {
+                    "type": "string"
+                },
+                "developerDocumentationUrl": {
+                    "type": "string"
+                },
+                "doi": {
+                    "type": "string"
+                },
+                "hpcModule": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "javaJar": {
+                    "type": "string"
+                },
+                "license": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "primaryThrust": {
+                    "type": "string"
+                },
+                "publicAccess": {
+                    "type": "string"
+                },
+                "pypiPackage": {
+                    "type": "string"
+                },
+                "releaseNotesUrl": {
+                    "type": "string"
+                },
+                "rustCrate": {
+                    "type": "string"
+                },
+                "securityReviewConducted": {
+                    "type": "string"
+                },
+                "sourceCodeUrl": {
+                    "type": "string"
+                },
+                "status": {
+                    "type": "string"
+                },
+                "targetIcicleRelease": {
+                    "type": "string"
+                },
+                "testsWritten": {
+                    "type": "string"
+                },
+                "trainingTutorialsAvailable": {
+                    "type": "string"
+                },
+                "trainingTutorialsUrl": {
+                    "type": "string"
+                },
+                "unixPackage": {
+                    "type": "string"
+                },
+                "usageDocumentationAvailable": {
+                    "type": "string"
+                },
+                "usageDocumentationUrl": {
+                    "type": "string"
+                },
+                "usageMetricsCollected": {
+                    "type": "string"
+                },
+                "website": {
+                    "type": "string"
+                }
+            },
+            "title": "Component",
+            "type": "object"
+        }
+    },
+    "$id": "https://github.com/ICICLE-ai/CI-Components-Catalog/ci-components.yaml",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "additionalProperties": true,
+    "metamodel_version": "1.7.0",
+    "title": "icicle-ci-component",
+    "type": "object",
+    "version": null
+}
+
