@@ -1,0 +1,25 @@
+components:
+  - id: TapisBase
+    owner: Joe Stubbs
+    primaryThrust: core/Software
+    name: Base ICICLE Tapis Software
+    status: ProductionRelease
+    website: tapis-project.org
+    description: Hosted, web-based API for managing data and executing software for research computing
+    targetIcicleRelease: VC3
+    licenseUrl: https://github.com/tapis-project/tapis-shared-java/blob/prod/LICENSE
+    publicAccess: true
+
+  - id: CameraTrapsEdgeSim
+    owner: Rich Cardone
+    name: Camera Traps Edge Simulator
+    primaryThrust: useInspired/AE
+    status: PrototypeRelease
+    website:
+    description: Command-line program for analyzing edge-to-center tradeoffs within the Camera Traps project
+    targetIcicleRelease: VC3
+    licenseUrl: https://github.com/tapis-project/camera-traps/blob/main/LICENSE
+    publicAccess: true
+    hasDependentComponents:
+        - related_to: TapisBase
+          relationship_type: DependsOn

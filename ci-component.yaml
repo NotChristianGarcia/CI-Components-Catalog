@@ -8,38 +8,145 @@ default_range: string
   
 classes:
     Component:
-        attributes:
-            id:
+        slots:
+            - id
+            - name
+            - status
+            - website
+            - description
+            - owner
+            - primaryThrust
+            - sourceCodeUrl
+            - targetIcicleRelease
+            - licenseUrl
+            - releaseNotesUrl 
+            - doi
+            - citation
+            - pypiPackage
+            - containerImage
+            - hpcModule
+            - unixPackage
+            - rustCrate
+            - javaJar
+            - artifactOther
+            - codeReviewConducted
+            - testsWritten
+            - securityReviewConducted
+            - biasAssessmentConducted
+            - usageDocumentationAvailable
+            - usageDocumentationUrl
+            - developerDocumentationAvailable
+            - developerDocumentationUrl
+            - trainingTutorialsAvailable
+            - trainingTutorialsUrl
+            - usageMetricsCollected
+            - publicAccess
+        unique_keys:
             name:
-            status:
-            website:
-            description:
-            createdBy:
-            primaryThrust:
-            sourceCodeUrl:
-            targetIcicleRelease:
-            license:
-            releaseNotesUrl:
-            doi:
-            citation:
-            pypiPackage:
-            containerImage:
-            hpcModule:
-            unixPackage:
-            rustCrate:
-            javaJar:
-            artifactOther:
-            codeReviewConducted:
-            testsWritten:
-            securityReviewConducted:
-            biasAssessmentConducted:
-            usageDocumentationAvailable:
-            usageDocumentationUrl:
-            developerDocumentationAvailable:
-            developerDocumentationUrl:
-            trainingTutorialsAvailable:
-            trainingTutorialsUrl:
-            usageMetricsCollected:
-            publicAccess:
+                unique_key_slots:
+                    - name
+        attributes:
+            hasDependentComponents:
+                multivalued: true
+                inlined_as_list: true
+                range: ComponentRelationship
 
 
+    Container:
+        tree_root: true
+        attributes:
+            components:
+                multivalued: true
+                inlined_as_list: true
+                range: Component
+    
+    ComponentRelationship:
+        attributes:
+            related_to:
+                range: Component
+                required: true
+            relationship_type:
+                range: ComponentRelationshipType
+
+
+slots:
+    id:
+        identifier: true
+        required: true
+    name:
+        required: true
+    status:
+        required: true
+        range: ComponentStatus
+    website:
+    description:
+    owner:
+    primaryThrust:
+        required: true
+        range: Thrusts
+    sourceCodeUrl:
+    targetIcicleRelease:
+        required: true
+        range: IcicleReleases
+    licenseUrl:
+        required: true
+    releaseNotesUrl:
+    doi:
+    citation:
+    pypiPackage:
+    containerImage:
+    hpcModule:
+    unixPackage:
+    rustCrate:
+    javaJar:
+    artifactOther:
+    codeReviewConducted:
+        range: boolean
+    testsWritten:
+        range: boolean
+    securityReviewConducted:
+        range: boolean
+    biasAssessmentConducted:
+        range: boolean
+    usageDocumentationAvailable:
+        range: boolean
+    usageDocumentationUrl:
+    developerDocumentationAvailable:
+        range: boolean
+    developerDocumentationUrl:
+    trainingTutorialsAvailable:
+        range: boolean
+    trainingTutorialsUrl:
+    usageMetricsCollected:
+        range: boolean
+    publicAccess:
+        required: true
+        range: boolean
+
+enums:
+    ComponentRelationshipType:
+        permissible_values:
+            DependsOn:
+    ComponentStatus:
+        permissible_values:
+            Unreleased:
+            PrototypeRelease:
+            AlphaRelease:
+            BetaRelease:
+            ProductionRelease:
+    Thrusts:
+        permissible_values:
+            core/Software:
+            core/CI4AI:
+            core/AI4CI:
+            core/FoundationAI:
+            core/PADI:
+            core/VA:
+            useInspired/DA:
+            useInspired/AE:
+            useInspired/SF:
+    IcicleReleases:
+        permissible_values:
+            None:
+            VC3:
+            VC4:

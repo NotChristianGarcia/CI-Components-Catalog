@@ -16,9 +16,19 @@ $ docker run -v $(pwd):/work  -w /work/ --rm -it jstubbs/linkedml gen-json-schem
 
 ```
 
+You can test the schema by validating the local example dataset ``components-data.yaml``, 
+included in the repository, by doing the following:
+
+```
+docker run -v $(pwd):/work  -w /work/ --rm -it jstubbs/linkedml linkml-validate -sci-component.yaml components-data.yaml
+```
+
+If no errors are returned, the message ``None`` will be output. 
+
 ## Deploying the Catalog Locally
 
+*In progress..*
 
-## 
+
 
 
