@@ -6,8 +6,20 @@ components:
     status: ProductionRelease
     website: tapis-project.org
     description: Hosted, web-based API for managing data and executing software for research computing
+    componentVersion: 1.3.0
     targetIcicleRelease: VC3
     licenseUrl: https://github.com/tapis-project/tapis-shared-java/blob/prod/LICENSE
+    publicAccess: true
+
+  - id: EventEngine
+    owner: Joe Stubbs
+    name: Event Engine
+    status: AlphaRelease
+    primaryThrust: core/Software
+    description: Framework for edge simulators and applications
+    componentVersion: 0.2.0
+    targetIcicleRelease: VC3
+    licenseUrl: https://github.com/tapis-project/event-engine/blob/main/LICENSE
     publicAccess: true
 
   - id: CameraTrapsEdgeSim
@@ -18,8 +30,102 @@ components:
     website:
     description: Command-line program for analyzing edge-to-center tradeoffs within the Camera Traps project
     targetIcicleRelease: VC3
+    componentVersion: Unknown
     licenseUrl: https://github.com/tapis-project/camera-traps/blob/main/LICENSE
     publicAccess: true
     hasDependentComponents:
         - related_to: TapisBase
           relationship_type: DependsOn
+        - related_to: EventEngine
+          relationship_type: DependsOn
+  
+  - id: PodsService
+    owner: Christian Garcia
+    name: Tapis Pods Service API
+    primaryThrust: core/Software
+    status: BetaRelease
+    website: https://tapis.readthedocs.io/en/latest/technical/pods.html
+    description: New API providing web-accessible long-lived containers (pods) as-a-service via Kubernetes. Providing WAN-accessible Neo4J, Postgres, and custom-image HTTP pods with a simple API. More templates on the way.
+    targetIcicleRelease: VC3
+    publicAccess: true
+    componentVersion: 1.3.0
+    licenseUrl: https://github.com/tapis-project/pods_service/blob/prod/LICENSE
+    hasDependentComponents:
+        - related_to: TapisBase
+          relationship_type: DependsOn
+  
+  - id: KrogerStoreClosure
+    owner: Ayaz Hyder
+    name: Kroger Grocery Store Closure Simulator Dashboard
+    primaryThrust: useInspired/SF
+    description: Webapp meant to visualize foodshed fallout from the removal of grocery stores in an area.
+    status: AlphaRelease
+    targetIcicleRelease: VC3
+    publicAccess: true
+    componentVersion: Unknown
+    licenseUrl: Unknown
+
+  - id: VAReusableGUI
+    owner: Yamei Tu
+    name: Visual Analytics Reusable GUI
+    primaryThrust: core/VA
+    description: Vue.js 2 webapp that displays Neo4j knowledge graphs with features such as filtering, searching, and drawn selections to provide users a way to read KGs.
+    status: AlphaRelease
+    targetIcicleRelease: VC3
+    publicAccess: true
+    componentVersion: Unknown
+    licenseUrl: Unknown
+    hasDependentComponents:
+        - related_to: PodsService
+          relationship_type: DependsOn
+
+  - id: SFVADashboard
+    owner: Matthew Lange
+    name: Smart Foodsheds VA Dashboard
+    primaryThrust: useInspired/SF
+    description: Visualizse food flows or something...
+    status: AlphaRelease
+    targetIcicleRelease: VC3
+    publicAccess: true
+    componentVersion: Unknown
+    licenseUrl: Unknown
+    hasDependentComponents:
+        - related_to: VAReusableGUI
+          relationship_type: DependsOn
+
+  - id: ComponentCatalog
+    owner: Joe Stubbs
+    name: ICICLE CI Component Catalog
+    primaryThrust: core/Software
+    description: Database and dashboard for discovering ICICLE projects and products.
+    status: AlphaRelease
+    targetIcicleRelease: VC3
+    publicAccess: true
+    componentVersion: Unknown
+    licenseUrl: Unknown
+    hasDependentComponents:
+        - related_to: VAReusableGUI
+          relationship_type: DependsOn
+
+  - id: HARP
+    owner: Swathi Vallabhajosyula
+    name: HPC Application Runtime Predictor (HARP)
+    primaryThrust: core/AI4CI
+    description: Pipeline for predicting application (specifically, ML) runtimes
+    status: AlphaRelease
+    targetIcicleRelease: VC3
+    publicAccess: true
+    componentVersion: Unknown
+    licenseUrl: Unknown
+
+
+  # - id:
+  #   owner:
+  #   name:
+  #   primaryThrust: 
+  #   description: 
+  #   status: AlphaRelease
+  #   targetIcicleRelease: VC3
+  #   publicAccess: true
+  #   componentVersion: Unknown
+  #   licenseUrl: Unknown
