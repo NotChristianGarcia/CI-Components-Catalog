@@ -60,7 +60,7 @@ docker run --name catalog --rm -p 5000:5000 tapis/ci-catalog
 With the application deployed locally, navigate to ``localhost:5000/data`` to see the 
 catalog.
 
-![Catalog](catalog.jpg)
+![Catalog](catalog.png)
 
 
 
