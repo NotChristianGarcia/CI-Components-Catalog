@@ -2,8 +2,9 @@
 
 FROM python:3.10
 RUN pip install Flask==2.2
-RUN pip install pyyaml
-RUN pip install requests
+RUN pip install pyyaml==6.0
+RUN pip install requests==2.28.2
+RUN pip install tapipy==1.2.20
 
 # application directory
 RUN mkdir /catalog
