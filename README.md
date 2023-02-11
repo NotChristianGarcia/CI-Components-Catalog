@@ -28,8 +28,11 @@ If no errors are returned, the message ``None`` will be output.
 
 ## Deploying the Catalog Locally
 
-A simple prototype application is being developed with Flask and Docker. You can deploy the
-prototype locally using one of the following methods:
+A simple prototype application is being developed with Flask and Docker. You need to install
+Docker on your computer before trying to run the application locally. See the [Docker 
+documentation](https://docs.docker.com/get-docker/) for information about how to get Docker on your platform.
+
+You can deploy the prototype locally using one of the following methods:
 
 ### Using Make
 
