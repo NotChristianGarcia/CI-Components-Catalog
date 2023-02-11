@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<table id="data" class="table table-striped">
+<thead>
+    <tr>
+      <th>Component Name</th>
+      <th>Owner</th>
+      <th>Thrust</th>
+      <th>Status</th>
+      <th>Description</th>
+      <th>Version</th>
+      <th>Target ICICLE Release</th>
+      <th>License</th>
+    </tr>
+  </thead>
+
+  <tbody>
+{% for c in components %}
+    <tr>
+        <td>{{ c['name'] }}</td>
+        <td>{{ c['owner'] }}</td>
+        <td>{{ c['primaryThrust'] }}</td>
+        <td>{{ c['status'] }}</td>
+        <td>{{ c['description'] }}</td>
+        <td>{{ c['componentVersion'] }}</td>
+        <td>{{ c['targetIcicleRelease'] }}</td>
+        <td>{{ c['licenseUrl'] }}</td>
+    </tr>
+{% endfor %}
+  </tbody>
+</table>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    $(document).ready(function () {
+      $('#data').DataTable();
+    });
+  </script>
+{% endblock %}
