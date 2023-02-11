@@ -1,6 +1,8 @@
 from config import config
 from flask import session
 from tapipy.tapis import Tapis
+import requests
+
 
 
 def is_logged_in():
@@ -12,6 +14,23 @@ def is_logged_in():
     if 'username' in session:
         return True, session['username'], session['roles']
     return False, None, None 
+
+
+def get_username(token):
+    """
+    Validate a Tapis JWT, `token`, and resolve it to a username.
+    """
+    headers = {'Content-Type': 'text/html'}
+    # call the userinfo endpoint
+    url = f"{config['tapis_base_url']}/v3/oauth2/userinfo"
+    headers = {'X-Tapis-Token': token}
+    try:
+        rsp = requests.get(url, headers=headers)
+        rsp.raise_for_status()
+        username = rsp.json()['result']['username']
+    except Exception as e:
+        raise Exception(f"Error looking up token info; debug: {e}")
+    return username
 
 
 def add_user_to_session(username, token):
