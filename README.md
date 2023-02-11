@@ -71,7 +71,7 @@ catalog.
 The CI Components Catalog is designed to use Tapis authentication and authorization. Certain
 components in the catalog are restricted to members of ICICLE.
 
-In order to leverage Tapis auth in the catalog running locally, you need to configure it
+In order to leverage Tapis authn/z in the catalog running locally, you need to configure it
 with a Tapis OAuth client. Generating an OAuth client can be done following the steps 
 below; see the [docs](https://tapis.readthedocs.io/en/latest/technical/authentication.html#oauth-clients) for more details.
 

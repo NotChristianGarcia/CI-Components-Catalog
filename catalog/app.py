@@ -28,7 +28,7 @@ def login():
     """
     Check for the existence of a login session, and if none exists, start the OAuth2 flow.
     """
-    authenticated, _ = auth.is_logged_in()
+    authenticated, _, _ = auth.is_logged_in()
     # if already authenticated, redirect to the main data table
     if authenticated:
         return redirect("/data", code=302)
@@ -66,7 +66,8 @@ def callback():
 
     username = get_username(token)
     app.logger.info(f"Got username for token; username: {username}")
-    auth.add_user_to_session(username, token)
+    roles = auth.add_user_to_session(username, token)
+    app.logger.info(f"Username added to session; found these roles: {roles}")
     return redirect("/data", code=302)    
 
 
@@ -105,14 +106,14 @@ def get_public_components():
 
 @app.route('/data', methods=['GET'])
 def get_data():
-    authenticated, user = auth.is_logged_in()
+    authenticated, user, roles = auth.is_logged_in()
     if not authenticated:
         logged_in = False
         message = 'NOTE: Only displaying public components.'
         components = get_public_components()
     else:
         logged_in = True
-        message = f"Username: {user}"
+        message = f"Username: {user}; Roles: {roles}"
         components = get_components()
     total = len(components)
     return render_template('data.html', 
