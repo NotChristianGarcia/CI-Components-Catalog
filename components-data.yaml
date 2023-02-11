@@ -61,7 +61,7 @@ components:
     description: Webapp meant to visualize foodshed fallout from the removal of grocery stores in an area.
     status: AlphaRelease
     targetIcicleRelease: VC3
-    publicAccess: true
+    publicAccess: false
     componentVersion: Unknown
     licenseUrl: Unknown
 
@@ -72,7 +72,7 @@ components:
     description: Vue.js 2 webapp that displays Neo4j knowledge graphs with features such as filtering, searching, and drawn selections to provide users a way to read KGs.
     status: AlphaRelease
     targetIcicleRelease: VC3
-    publicAccess: true
+    publicAccess: false
     componentVersion: Unknown
     licenseUrl: Unknown
     hasDependentComponents:
@@ -86,7 +86,7 @@ components:
     description: Visualizse food flows or something...
     status: AlphaRelease
     targetIcicleRelease: VC3
-    publicAccess: true
+    publicAccess: false
     componentVersion: Unknown
     licenseUrl: Unknown
     hasDependentComponents:
@@ -114,9 +114,10 @@ components:
     description: Pipeline for predicting application (specifically, ML) runtimes
     status: AlphaRelease
     targetIcicleRelease: VC3
-    publicAccess: true
+    publicAccess: false
     componentVersion: Unknown
     licenseUrl: Unknown
+
 
 
   # - id:

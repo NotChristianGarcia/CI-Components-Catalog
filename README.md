@@ -66,7 +66,33 @@ catalog.
 ![Catalog](catalog.png)
 
 
+### Authentication with Tapis
+
+The CI Components Catalog is designed to use Tapis authentication and authorization. Certain
+components in the catalog are restricted to members of ICICLE.
+
+In order to leverage Tapis auth in the catalog running locally, you need to configure it
+with a Tapis OAuth client. Generating an OAuth client can be done following the steps 
+below; see the [docs](https://tapis.readthedocs.io/en/latest/technical/authentication.html#oauth-clients) for more details.
 
 
+#### Create an OAuth Client (One Time Setup)
+First, generate a JWT and export it to the environment:
+
+```
+curl -H "Content-type: application/json" -d '{"username": "your_username", "password": "your_password", "grant_type": "password" }' https://icicle.tapis.io/v3/oauth2/tokens
+
+export JWT=eyJ0eXAiOiJK....
+```
+
+Use the token to register an OAuth client:
+```
+curl -H "X-Tapis-Token: $JWT" -H "Content-type: application/json" -d '{"client_id": "ci-comps-test", "callback_url": "http://localhost:5000/oauth2/callback", "client_key": "icicle4ever"}' https://icicle.tapis.io/v3/oauth2/clients
+```
+
+#### Configure the Catalog to Use the Client
+
+The catalog needs to be configured with the client id and key to work with Tapis OAuth.
+Simply add the id and key to the ``config.yaml`` file.
 
 

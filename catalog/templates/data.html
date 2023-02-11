@@ -3,6 +3,18 @@
 
 {% block content %}
 
+<div>
+  {% if not logged_in %}
+     <div> Status: Not Authenticated </div>
+     <span> {{ message }} (<a href="/login">Login</a>) </span>
+  {% else %}
+   <div> Status: Authenticated </div>
+   <span> {{ message }} (<a href="/logout">Logout</a>) </span>
+  {% endif %}
+  <div>Retrieved: {{ total }} total componets</div>
+</div>
+  
+
 <table id="data" class="table table-striped">
 <thead>
     <tr>
@@ -32,7 +44,9 @@
 {% endfor %}
   </tbody>
 </table>
+
 {% endblock %}
+
 
 {% block scripts %}
   <script>
