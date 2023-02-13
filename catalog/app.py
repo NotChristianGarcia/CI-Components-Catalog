@@ -71,6 +71,9 @@ def callback():
 
 @app.route('/data', methods=['GET'])
 def get_data():
+    """
+    Main route displaying the table of components.
+    """
     authenticated, user, roles = auth.is_logged_in()
     if not authenticated:
         logged_in = False
@@ -80,6 +83,9 @@ def get_data():
         logged_in = True
         message = f"Username: {user}; Roles: {roles}"
         components = models.get_components()
+        # filter the components based on the user's roles:
+        components = models.filter_components_by_roles(components, roles)
+    
     total = len(components)
     return render_template('data.html', 
         components=components,

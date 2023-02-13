@@ -42,6 +42,7 @@ classes:
             - trainingTutorialsUrl
             - usageMetricsCollected
             - publicAccess
+            - restrictedToRole
         unique_keys:
             name:
                 unique_key_slots:
