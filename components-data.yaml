@@ -118,6 +118,17 @@ components:
     componentVersion: Unknown
     licenseUrl: Unknown
 
+  - id: testComponent
+    owner: Joe Stubbs
+    name: Test ICICLE Component
+    primaryThrust: core/Software
+    description: A test component for testing the catalog app -- not real 
+    status: PrototypeRelease
+    targetIcicleRelease: VC3
+    publicAccess: false
+    componentVersion: Unknown
+    licenseUrl: Unknown
+    restrictedToRole: catalog_testComponent
 
 
   # - id:
