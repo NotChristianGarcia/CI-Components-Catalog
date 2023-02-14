@@ -5,10 +5,34 @@ import requests
 
 import auth
 from config import config
+import logging
 import models
 
-
 app = Flask(__name__)
+app.logger.setLevel(logging.INFO)
+
+# Check config:
+# sanity checks
+if 'client_id' not in config:
+    raise Exception("no client_id in config. Quitting..")
+else: 
+    app.logger.info(f"using client_id: {config['client_id']}")
+
+if 'client_key' not in config or config['client_key'] == None:
+    raise Exception("no client_key in config. Quitting..")
+else: 
+    app.logger.info(f"using client_key: ********")
+    
+if 'tapis_base_url' not in config:
+    raise Exception("no tapis_base_url in config. Quitting..")
+else: 
+    app.logger.info(f"using tapis_base_url: {config['tapis_base_url']}")
+
+if 'app_base_url' not in config:
+    raise Exception("no app_base_url in config. Quitting..")
+else: 
+    app.logger.info(f"using app_base_url: {config['app_base_url']}")
+
 
 # Set the secret key to some random bytes. 
 # TODO: this key should be updated

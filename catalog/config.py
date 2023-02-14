@@ -1,17 +1,19 @@
+import os
 import yaml
 
 with open('/catalog/config.yaml', 'r') as f:
     config = yaml.safe_load(f)
 
-# sanity checks
-if 'client_id' not in config:
-    raise Exception("no client_id in config. Quitting..")
 
-if 'client_key' not in config or config['client_key'] == None:
-    raise Exception("no client_key in config. Quitting..")
-    
-if 'tapis_base_url' not in config:
-    raise Exception("no tapis_base_url in config. Quitting..")
+# override with environment vars
+if os.environ.get('client_id'):
+    config['client_id'] = os.environ.get('client_id')
 
-if 'app_base_url' not in config:
-    raise Exception("no app_base_url in config. Quitting..")
+if os.environ.get('client_key'):
+    config['client_key'] = os.environ.get('client_key')
+
+if os.environ.get('tapis_base_url'):
+    config['tapis_base_url'] = os.environ.get('tapis_base_url')
+
+if os.environ.get('app_base_url'):
+    config['app_base_url'] = os.environ.get('app_base_url')
