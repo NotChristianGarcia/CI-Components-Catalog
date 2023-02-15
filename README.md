@@ -62,15 +62,25 @@ docker run --name catalog --rm -p 5000:5000 tapis/ci-catalog
 ## Application URLs
 
 With the application deployed locally, navigate to ``localhost:5000/data`` to see the 
-catalog.
+catalog overview. Note that the root URL, ``localhost:5000``, redirects to the catalog overview.
 
 ![Catalog](catalog.png)
 
 
+The catalog also provides a "details" screen for each component. Navigate to 
+``localhost:5000/data/<component_id>`` to see the details of a component. For example, by 
+navigating to ``http://localhost:5000/data/CameraTrapsEdgeSim``, we see details about the Camera Traps
+project:
+
+![Details](catalog-component-details.png)
+
+
 ### Authentication with Tapis
 
-The CI Components Catalog is designed to use Tapis authentication and authorization. Certain
-components in the catalog are restricted to members of ICICLE.
+The CI Components Catalog is designed to use Tapis authentication and authorization. Components in the catalog 
+can be restricted to members of ICICLE by setting ``publicAccess`` to ``false``. Access can be further
+restricted by setting the ``restrictedToRole`` attribute on a component -- in this case, a person must be a
+member of the corresponding Tapis role to view the component. 
 
 In order to leverage Tapis authn/z in the catalog running locally, you need to configure it
 with a Tapis OAuth client. Generating an OAuth client can be done following the steps 
