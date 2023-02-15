@@ -93,6 +93,14 @@ def callback():
     return redirect("/data", code=302)    
 
 
+@app.route('/', methods=['GET'])
+def root():
+    """
+    Redirect the root URL path to the main route.
+    """
+    return redirect("/data", 302)
+
+
 @app.route('/data', methods=['GET'])
 def get_data():
     """
@@ -116,6 +124,39 @@ def get_data():
         total=total, 
         message=message, 
         logged_in=logged_in)
+
+
+@app.route('/data/<cid>', methods=['GET'])
+def get_component(cid):
+    """
+    Get the details of a specific component by its id.
+    """
+    authenticated, user, roles = auth.is_logged_in()
+    if not authenticated:
+        logged_in = False
+        message = 'NOTE: Only displaying public components.'
+        components = models.get_public_components()
+    else:
+        logged_in = True
+        message = f"Username: {user}; Roles: {roles}"
+        components = models.get_components()
+        # filter the components based on the user's roles:
+        components = models.filter_components_by_roles(components, roles)
+    # get the specific component
+    for c in components:
+        if c['id'] == cid:
+            component = c
+            message = ""
+            break
+    else:
+        message = "Component does not exist."
+        component = None
+
+    return render_template('details.html', 
+        component_name=component['name'], 
+        component=component,
+        message=message)
+
 
 
 # run the development server when started from the command line

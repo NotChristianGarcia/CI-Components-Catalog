@@ -6,7 +6,8 @@ This repository contains metadata and code for the ICICLE CI Components Catalog.
 products developed by the ICICLE AI Institute. Using the Catalog, members within ICICLE as well as their collaborators and
 the general public can learn about the products being produced. 
 
-## Schema
+
+## Catalog Schema
 
 We are using LinkML and JSONSchema to describe the data model associated with components in the catalog. 
 The JSONSchema document can be generated from the LinkML yaml document by doing the following:
@@ -96,3 +97,53 @@ The catalog needs to be configured with the client id and key to work with Tapis
 Simply add the id and key to the ``config.yaml`` file.
 
 
+## Deployment to Pods
+
+A hosted version of the Catalog is now running on the Tapis Pods API. Navigate to the 
+[Production URL](https://components.pods.icicle.tapis.io) to interact with the most recently
+deployed version.
+
+### Update the Deployment
+
+**NOTE:** Updating the deployment requires access to the ``tapis`` organization on Docker Hub to 
+be able to push a new version of the image as well as access to the ``components`` pod in the
+ICICLE tenant. Reach out on the #icicle_ci_component_catalog channel of tacc-cloud.slack.com if 
+you need help getting access. 
+
+Updating the deployment on Tapis Pods is incredibly easy -- just do the following:
+
+1) Push a new version of the image to docker hub: ``tapis/ci-catalog:latest``
+2) Use the restart operation to restart the pod; this will pull the new image:
+
+```
+curl -H "x-tapis-token: $token" https://icicle.tapis.io/v3/pods/components/restart
+
+```
+
+You can check on the deployment by doing:
+
+```
+curl -H "x-tapis-token: $token" https://icicle.tapis.io/v3/pods/components/catalog
+```
+
+And you can see recent logs of the deployed version with:
+
+```
+curl -H "x-tapis-token: $token" https://icicle.tapis.io/v3/pods/components/logs
+```
+
+
+
+### Creating the Initial Deployment
+
+The initial deployment to the pods service involved creating a new pod with the "components" ID. 
+We leave this here only to document what was done, for posterity. **NOTE:** registering the same pod
+again is not only unnecessary but it will not work, because the ``id`` is already taken.
+
+We used the following `curl` command to register the pod.
+
+```
+curl -H "x-tapis-token: $token" https://icicle.tapis.io/v3/pods -H "content-type: application/json" -d '{"pod_id": "components", "pod_template": "tapis/ci-catalog", "description": "Pod for hosted version of the ICICLE CI Component Catalog", "environment_variables": {"client_id": "<the prod client id>", "client_key": "<the prod client key>","app_base_url": "https://components.pods.icicle.tapis.io"}, "time_to_stop_instance":  -1}'
+```
+
+Here, ``$token``
