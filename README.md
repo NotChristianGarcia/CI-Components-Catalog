@@ -133,12 +133,11 @@ curl -H "x-tapis-token: $token" https://icicle.tapis.io/v3/pods/components/logs
 ```
 
 
-
 ### Creating the Initial Deployment
 
+**NOTE:** Registering the same pod again is not only unnecessary but it will not work, because the ``id`` is already taken. We leave this here only to document what was done, for posterity. 
+
 The initial deployment to the pods service involved creating a new pod with the "components" ID. 
-We leave this here only to document what was done, for posterity. **NOTE:** registering the same pod
-again is not only unnecessary but it will not work, because the ``id`` is already taken.
 
 We used the following `curl` command to register the pod.
 
@@ -146,4 +145,5 @@ We used the following `curl` command to register the pod.
 curl -H "x-tapis-token: $token" https://icicle.tapis.io/v3/pods -H "content-type: application/json" -d '{"pod_id": "components", "pod_template": "tapis/ci-catalog", "description": "Pod for hosted version of the ICICLE CI Component Catalog", "environment_variables": {"client_id": "<the prod client id>", "client_key": "<the prod client key>","app_base_url": "https://components.pods.icicle.tapis.io"}, "time_to_stop_instance":  -1}'
 ```
 
-Here, ``$token``
+Here, ``$token`` must be a valid Tapis JWT in the icicle tenant for a user authorized for the ``components``
+pod.
