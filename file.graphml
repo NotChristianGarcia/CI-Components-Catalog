@@ -7,7 +7,7 @@
 <key id="d28" for="node" attr.name="restrictedToRole" attr.type="boolean"/>
 <key id="d27" for="node" attr.name="componentVersion" attr.type="long"/>
 <key id="d26" for="node" attr.name="biasAssessmentConducted" attr.type="boolean"/>
-<key id="d25" for="node" attr.name="labels" attr.type="string"/>
+<key id="d25" for="node" attr.name="label" attr.type="string"/>
 <key id="d24" for="node" attr.name="usageMetricsCollected" attr.type="boolean"/>
 <key id="d23" for="node" attr.name="trainingTutorialsUrl" attr.type="string"/>
 <key id="d22" for="node" attr.name="trainingTutorialsAvailable" attr.type="boolean"/>
