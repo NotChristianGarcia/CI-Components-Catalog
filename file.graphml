@@ -32,7 +32,7 @@
 <key id="primaryThrust" for="node" attr.name="primaryThrust" attr.type="string"/>
 <key id="owner" for="node" attr.name="owner" attr.type="string"/>
 <key id="id" for="node" attr.name="id" attr.type="string"/>
-<graph edgedefault="directed"><node id="1">
+<graph edgedefault="undirected"><node id="1">
   <data key="id">TapisBase</data>
   <data key="owner">Joe Stubbs</data>
   <data key="primaryThrust">core/Software</data>
@@ -399,22 +399,22 @@
   <data key="licenseUrl">https://github.com/PPODschema/PPOD_FSL/blob/main/LICENSE.md</data>
   <data key="labels">:Component</data>
 </node>
-<edge source="3" target="1">
+<edge source="1" target="3">
   <data key="label">DependsOn</data>
 </edge>
-<edge source="3" target="2">
+<edge source="1" target="4">
   <data key="label">DependsOn</data>
 </edge>
-<edge source="4" target="1">
+<edge source="2" target="3">
   <data key="label">DependsOn</data>
 </edge>
-<edge source="6" target="4">
+<edge source="4" target="6">
   <data key="label">DependsOn</data>
 </edge>
-<edge source="7" target="6">
+<edge source="6" target="7">
   <data key="label">DependsOn</data>
 </edge>
-<edge source="8" target="6">
+<edge source="6" target="8">
   <data key="label">DependsOn</data>
 </edge>
 </graph></graphml>
