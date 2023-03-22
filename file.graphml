@@ -7,7 +7,7 @@
 <key id="d28" for="node" attr.name="restrictedToRole" attr.type="boolean"/>
 <key id="d27" for="node" attr.name="componentVersion" attr.type="long"/>
 <key id="d26" for="node" attr.name="biasAssessmentConducted" attr.type="boolean"/>
-<key id="d25" for="node" attr.name="label" attr.type="string"/>
+<key id="d25" for="node" attr.name="labels" attr.type="string"/>
 <key id="d24" for="node" attr.name="usageMetricsCollected" attr.type="boolean"/>
 <key id="d23" for="node" attr.name="trainingTutorialsUrl" attr.type="string"/>
 <key id="d22" for="node" attr.name="trainingTutorialsAvailable" attr.type="boolean"/>
@@ -59,7 +59,7 @@
   <data key="d22">True</data>
   <data key="d23">https://tapis-project.github.io/tutorials/</data>
   <data key="d24">True</data>
-  <data key="d25">TapisBase</data>
+  <data key="d25">:Component, :Dog</data>
 </node>
 <node id="2">
   <data key="d0">EventEngine</data>
@@ -86,7 +86,7 @@
   <data key="d22">False</data>
   <data key="d23"></data>
   <data key="d24">True</data>
-  <data key="d25">EventEngine</data>
+  <data key="d25">:Component, :Dog</data>
 </node>
 <node id="3">
   <data key="d0">CameraTrapsEdgeSim</data>
@@ -115,7 +115,7 @@
   <data key="d22">False</data>
   <data key="d23"></data>
   <data key="d24">False</data>
-  <data key="d25">CameraTrapsEdgeSim</data>
+  <data key="d25">:Component, :Dog</data>
 </node>
 <node id="4">
   <data key="d0">PodsService</data>
@@ -143,7 +143,7 @@
   <data key="d22">True</data>
   <data key="d23">https://tapis-project.github.io/tutorials/pods/intro/</data>
   <data key="d24">True</data>
-  <data key="d25">PodsService</data>
+  <data key="d25">:Component, :Dog</data>
 </node>
 <node id="5">
   <data key="d0">KrogerStoreClosure</data>
@@ -156,7 +156,7 @@
   <data key="d10">True</data>
   <data key="d7">Unknown</data>
   <data key="d9">Unknown</data>
-  <data key="d25">KrogerStoreClosure</data>
+  <data key="d25">:Component, :Dog</data>
 </node>
 <node id="6">
   <data key="d0">VAReusableGUI</data>
@@ -169,7 +169,7 @@
   <data key="d10">True</data>
   <data key="d7">Unknown</data>
   <data key="d9">Unknown</data>
-  <data key="d25">VAReusableGUI</data>
+  <data key="d25">:Component, :Dog</data>
 </node>
 <node id="7">
   <data key="d0">SFVADashboard</data>
@@ -182,7 +182,7 @@
   <data key="d10">True</data>
   <data key="d7">Unknown</data>
   <data key="d9">Unknown</data>
-  <data key="d25">SFVADashboard</data>
+  <data key="d25">:Component, :Dog</data>
 </node>
 <node id="8">
   <data key="d0">ComponentCatalog</data>
@@ -209,7 +209,7 @@
   <data key="d22">False</data>
   <data key="d23"></data>
   <data key="d24">False</data>
-  <data key="d25">ComponentCatalog</data>
+  <data key="d25">:Component, :Dog</data>
 </node>
 <node id="9">
   <data key="d0">HARP</data>
@@ -223,7 +223,7 @@
   <data key="d7">Unknown</data>
   <data key="d9">Unknown</data>
   <data key="d11">https://github.com/ICICLE-ai/harp</data>
-  <data key="d25">HARP</data>
+  <data key="d25">:Component, :Dog</data>
 </node>
 <node id="10">
   <data key="d0">30080website</data>
@@ -244,7 +244,7 @@
   <data key="d26">False</data>
   <data key="d10">True</data>
   <data key="d28">False</data>
-  <data key="d25">30080website</data>
+  <data key="d25">:Component, :Dog</data>
 </node>
 <node id="11">
   <data key="d0">edgecomputingsimulator</data>
@@ -269,7 +269,7 @@
   <data key="d24">False</data>
   <data key="d10">True</data>
   <data key="d28">False</data>
-  <data key="d25">edgecomputingsimulator</data>
+  <data key="d25">:Component, :Dog</data>
 </node>
 <node id="12">
   <data key="d0">imagelabelingtool</data>
@@ -294,7 +294,7 @@
   <data key="d24">False</data>
   <data key="d10">True</data>
   <data key="d28">False</data>
-  <data key="d25">imagelabelingtool</data>
+  <data key="d25">:Component, :Dog</data>
 </node>
 <node id="13">
   <data key="d0">scouthelper</data>
@@ -321,7 +321,7 @@
   <data key="d24">False</data>
   <data key="d10">True</data>
   <data key="d28">False</data>
-  <data key="d25">scouthelper</data>
+  <data key="d25">:Component, :Dog</data>
 </node>
 <node id="14">
   <data key="d0">23405setgpsboundaries</data>
@@ -346,7 +346,7 @@
   <data key="d24">False</data>
   <data key="d10">True</data>
   <data key="d28">False</data>
-  <data key="d25">23405setgpsboundaries</data>
+  <data key="d25">:Component, :Dog</data>
 </node>
 <node id="15">
   <data key="d0">softwarepilot</data>
@@ -370,7 +370,7 @@
   <data key="d19">https://pypi.org/project/SoftwarePilot/</data>
   <data key="d24">False</data>
   <data key="d10">True</data>
-  <data key="d25">softwarepilot</data>
+  <data key="d25">:Component, :Dog</data>
 </node>
 <node id="16">
   <data key="d0">hello_icicle_auth_clients</data>
@@ -384,7 +384,7 @@
   <data key="d7">Unknown</data>
   <data key="d9">Unknown</data>
   <data key="d11">https://github.com/ICICLE-ai/hello_icicle_auth_clients</data>
-  <data key="d25">hello_icicle_auth_clients</data>
+  <data key="d25">:Component, :Dog</data>
 </node>
 <node id="17">
   <data key="d0">PPOD_FSL</data>
@@ -398,7 +398,7 @@
   <data key="d10">True</data>
   <data key="d7">Unknown</data>
   <data key="d9">https://github.com/PPODschema/PPOD_FSL/blob/main/LICENSE.md</data>
-  <data key="d25">PPOD_FSL</data>
+  <data key="d25">:Component, :Dog</data>
 </node>
 <edge source="1" target="3">
   <data key="d32">DependsOn</data>
