@@ -1,5 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="relationship" for="edge" attr.name="relationship" attr.type="string"/>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="tag" for="edge" attr.name="tag" attr.type="string"/>
+<key id="dopppler" for="edge" attr.name="dopppler" attr.type="string"/>
+<key id="relationship" for="edge" attr.name="relationship" attr.type="string"/>
 <key id="pypiPackage" for="node" attr.name="pypiPackage" attr.type="string"/>
 <key id="doi" for="node" attr.name="doi" attr.type="string"/>
 <key id="componentVersion" for="node" attr.name="componentVersion" attr.type="double"/>
@@ -401,20 +403,32 @@
 </node>
 <edge source="3" target="1">
   <data key="relationship">DependsOn</data>
+  <data key="dopppler">DependsOn</data>
+  <data key="tag">dog</data>
 </edge>
 <edge source="3" target="2">
   <data key="relationship">DependsOn</data>
+  <data key="dopppler">DependsOn</data>
+  <data key="tag">dog</data>
 </edge>
 <edge source="4" target="1">
   <data key="relationship">DependsOn</data>
+  <data key="dopppler">DependsOn</data>
+  <data key="tag">dog</data>
 </edge>
 <edge source="6" target="4">
   <data key="relationship">DependsOn</data>
+  <data key="dopppler">DependsOn</data>
+  <data key="tag">dog</data>
 </edge>
 <edge source="7" target="6">
   <data key="relationship">DependsOn</data>
+  <data key="dopppler">DependsOn</data>
+  <data key="tag">dog</data>
 </edge>
 <edge source="8" target="6">
   <data key="relationship">DependsOn</data>
+  <data key="dopppler">DependsOn</data>
+  <data key="tag">dog</data>
 </edge>
 </graph></graphml>
