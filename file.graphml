@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="relation" for="edge" attr.name="relation" attr.type="string"/>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="relationship" for="edge" attr.name="relationship" attr.type="string"/>
 <key id="pypiPackage" for="node" attr.name="pypiPackage" attr.type="string"/>
 <key id="doi" for="node" attr.name="doi" attr.type="string"/>
 <key id="componentVersion" for="node" attr.name="componentVersion" attr.type="double"/>
@@ -32,7 +32,7 @@
 <key id="primaryThrust" for="node" attr.name="primaryThrust" attr.type="string"/>
 <key id="owner" for="node" attr.name="owner" attr.type="string"/>
 <key id="id" for="node" attr.name="id" attr.type="string"/>
-<graph edgedefault="undirected"><node id="1">
+<graph edgedefault="directed"><node id="1">
   <data key="id">TapisBase</data>
   <data key="owner">Joe Stubbs</data>
   <data key="primaryThrust">core/Software</data>
@@ -400,21 +400,21 @@
   <data key="labels">:Component</data>
 </node>
 <edge source="1" target="3">
-  <data key="relation">DependsOn</data>
+  <data key="relationship">DependsOn</data>
 </edge>
 <edge source="1" target="4">
-  <data key="relation">DependsOn</data>
+  <data key="relationship">DependsOn</data>
 </edge>
 <edge source="2" target="3">
-  <data key="relation">DependsOn</data>
+  <data key="relationship">DependsOn</data>
 </edge>
 <edge source="4" target="6">
-  <data key="relation">DependsOn</data>
+  <data key="relationship">DependsOn</data>
 </edge>
 <edge source="6" target="7">
-  <data key="relation">DependsOn</data>
+  <data key="relationship">DependsOn</data>
 </edge>
 <edge source="6" target="8">
-  <data key="relation">DependsOn</data>
+  <data key="relationship">DependsOn</data>
 </edge>
 </graph></graphml>
