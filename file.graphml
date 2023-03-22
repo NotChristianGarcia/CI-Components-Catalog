@@ -36,7 +36,7 @@
   <data key="id">TapisBase</data>
   <data key="owner">Joe Stubbs</data>
   <data key="primaryThrust">core/Software</data>
-  <data key="name">TapisBase</data>
+  <data key="name">Base ICICLE Tapis Software</data>
   <data key="status">ProductionRelease</data>
   <data key="website">tapis-project.org</data>
   <data key="description">Hosted, web-based API for managing data and executing software for research computing</data>
@@ -63,7 +63,7 @@
 <node id="2">
   <data key="id">EventEngine</data>
   <data key="owner">Joe Stubbs</data>
-  <data key="name">EventEngine</data>
+  <data key="name">Event Engine</data>
   <data key="status">AlphaRelease</data>
   <data key="primaryThrust">core/Software</data>
   <data key="description">Framework for edge simulators and applications</data>
@@ -90,7 +90,7 @@
 <node id="3">
   <data key="id">CameraTrapsEdgeSim</data>
   <data key="owner">Rich Cardone</data>
-  <data key="name">CameraTrapsEdgeSim</data>
+  <data key="name">Camera Traps Edge Simulator</data>
   <data key="primaryThrust">useInspired/AE</data>
   <data key="status">PrototypeRelease</data>
   <data key="website"></data>
@@ -119,7 +119,7 @@
 <node id="4">
   <data key="id">PodsService</data>
   <data key="owner">Christian Garcia</data>
-  <data key="name">PodsService</data>
+  <data key="name">Tapis Pods Service API</data>
   <data key="primaryThrust">core/Software</data>
   <data key="status">BetaRelease</data>
   <data key="website">https://tapis.readthedocs.io/en/latest/technical/pods.html</data>
@@ -147,7 +147,7 @@
 <node id="5">
   <data key="id">KrogerStoreClosure</data>
   <data key="owner">Ayaz Hyder</data>
-  <data key="name">KrogerStoreClosure</data>
+  <data key="name">Kroger Grocery Store Closure Simulator Dashboard</data>
   <data key="primaryThrust">useInspired/SF</data>
   <data key="description">Webapp meant to visualize foodshed fallout from the removal of grocery stores in an area.</data>
   <data key="status">AlphaRelease</data>
@@ -160,7 +160,7 @@
 <node id="6">
   <data key="id">VAReusableGUI</data>
   <data key="owner">Yamei Tu</data>
-  <data key="name">VAReusableGUI</data>
+  <data key="name">Visual Analytics Reusable GUI</data>
   <data key="primaryThrust">core/VA</data>
   <data key="description">Vue.js 2 webapp that displays Neo4j knowledge graphs with features such as filtering, searching, and drawn selections to provide users a way to read KGs.</data>
   <data key="status">AlphaRelease</data>
@@ -173,7 +173,7 @@
 <node id="7">
   <data key="id">SFVADashboard</data>
   <data key="owner">Matthew Lange</data>
-  <data key="name">SFVADashboard</data>
+  <data key="name">Smart Foodsheds VA Dashboard</data>
   <data key="primaryThrust">useInspired/SF</data>
   <data key="description">Visualizse food flows or something...</data>
   <data key="status">AlphaRelease</data>
@@ -186,7 +186,7 @@
 <node id="8">
   <data key="id">ComponentCatalog</data>
   <data key="owner">Joe Stubbs</data>
-  <data key="name">ComponentCatalog</data>
+  <data key="name">ICICLE CI Component Catalog</data>
   <data key="primaryThrust">core/Software</data>
   <data key="description">Database and dashboard for discovering ICICLE projects and products.</data>
   <data key="status">AlphaRelease</data>
@@ -213,7 +213,7 @@
 <node id="9">
   <data key="id">HARP</data>
   <data key="owner">Swathi Vallabhajosyula</data>
-  <data key="name">HARP</data>
+  <data key="name">HPC Application Runtime Predictor (HARP)</data>
   <data key="primaryThrust">core/AI4CI</data>
   <data key="description">Pipeline for predicting application (specifically, ML) runtimes</data>
   <data key="status">AlphaRelease</data>
@@ -226,7 +226,7 @@
 </node>
 <node id="10">
   <data key="id">30080website</data>
-  <data key="name">30080website</data>
+  <data key="name">ICICLE Digital Agriculture Hub</data>
   <data key="status">PrototypeRelease</data>
   <data key="website">https://go.osu.edu/icicle-ag</data>
   <data key="description">The Digital Agriculture Hub will be the source for end users to access data-driven, edge services such as aerial scouting and sprayer control and to initiate cloud jobs for agricultural workloads</data>
@@ -247,7 +247,7 @@
 </node>
 <node id="11">
   <data key="id">edgecomputingsimulator</data>
-  <data key="name">edgecomputingsimulator</data>
+  <data key="name">far-edge edge simulator</data>
   <data key="status">PrototypeRelease</data>
   <data key="website"></data>
   <data key="description">A tool to simulate power demands, cpu usage and other far-edge metrics for aerial missions</data>
@@ -272,7 +272,7 @@
 </node>
 <node id="12">
   <data key="id">imagelabelingtool</data>
-  <data key="name">imagelabelingtool</data>
+  <data key="name">image labeling tool</data>
   <data key="status">PrototypeRelease</data>
   <data key="website">https://go.osu.edu/icicle-ag-ms-imagelabelingtool</data>
   <data key="description">Simple Python program that can conveniently and quickly labels crop disease in agricultural images</data>
@@ -297,7 +297,7 @@
 </node>
 <node id="13">
   <data key="id">scouthelper</data>
-  <data key="name">scouthelper</data>
+  <data key="name">in-field helper for crop scouts</data>
   <data key="status">PrototypeRelease</data>
   <data key="website">https://go.osu.edu/icicle-ag-ms-scouthelper</data>
   <data key="description">Given (1) a set of agricultural images labeled by a neural network and (2) a set of images on a new field, this tool explains to scouts if the images of the new field fully vet the neural network</data>
@@ -324,7 +324,7 @@
 </node>
 <node id="14">
   <data key="id">23405setgpsboundaries</data>
-  <data key="name">23405setgpsboundaries</data>
+  <data key="name">set gps boundaries</data>
   <data key="status">PrototypeRelease</data>
   <data key="website">https://go.osu.edu/icicle-ag-ms-setgpsboundaries</data>
   <data key="description">An interactive visual tool for using Mapbox to get a polygon represented by GPS edges</data>
@@ -349,7 +349,7 @@
 </node>
 <node id="15">
   <data key="id">softwarepilot</data>
-  <data key="name">softwarepilot</data>
+  <data key="name">software pilot</data>
   <data key="status">PrototypeRelease</data>
   <data key="website">https://pypi.org/project/SoftwarePilot/</data>
   <data key="description">Software pilot provides an API to use AI models to fly missions for unmanned aerial vehicles</data>
@@ -374,7 +374,7 @@
 <node id="16">
   <data key="id">hello_icicle_auth_clients</data>
   <data key="owner">Mary Thomas</data>
-  <data key="name">hello_icicle_auth_clients</data>
+  <data key="name">Hello ICICLE Auth Clients</data>
   <data key="primaryThrust">core/Software</data>
   <data key="description">Repo for Authenticated Clients and Applications for ICICLE CI Services</data>
   <data key="status">PrototypeRelease</data>
@@ -388,7 +388,7 @@
 <node id="17">
   <data key="id">PPOD_FSL</data>
   <data key="owner">Allan Hollander</data>
-  <data key="name">PPOD_FSL</data>
+  <data key="name">PPOD Schema - FSL Version</data>
   <data key="primaryThrust">useInspired/SF</data>
   <data key="description">A LinkML schema for PPOD (Person-Project-Organization-Dataset) information created with attributes for uses in the UC Davis Food Systems Lab.</data>
   <data key="status">BetaRelease</data>
