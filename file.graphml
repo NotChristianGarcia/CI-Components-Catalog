@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="label" for="edge" attr.name="label" attr.type="string"/>
 <key id="labels" for="edge" attr.name="labels" attr.type="string"/>
-<key id="relationships" for="edge" attr.name="relationships" attr.type="string"/>
+<key id="relatdsaionships" for="edge" attr.name="relatdsaionships" attr.type="string"/>
 <key id="pypiPackage" for="node" attr.name="pypiPackage" attr.type="string"/>
 <key id="doi" for="node" attr.name="doi" attr.type="string"/>
 <key id="componentVersion" for="node" attr.name="componentVersion" attr.type="double"/>
@@ -402,32 +402,32 @@
   <data key="labels">:Component</data>
 </node>
 <edge source="3" target="1">
-  <data key="relationships">DependsOn</data>
+  <data key="relatdsaionships">DependsOn</data>
   <data key="labels">DependsOn</data>
   <data key="label">:TEST</data>
 </edge>
 <edge source="3" target="2">
-  <data key="relationships">DependsOn</data>
+  <data key="relatdsaionships">DependsOn</data>
   <data key="labels">DependsOn</data>
   <data key="label">:TEST</data>
 </edge>
 <edge source="4" target="1">
-  <data key="relationships">DependsOn</data>
+  <data key="relatdsaionships">DependsOn</data>
   <data key="labels">DependsOn</data>
   <data key="label">:TEST</data>
 </edge>
 <edge source="6" target="4">
-  <data key="relationships">DependsOn</data>
+  <data key="relatdsaionships">DependsOn</data>
   <data key="labels">DependsOn</data>
   <data key="label">:TEST</data>
 </edge>
 <edge source="7" target="6">
-  <data key="relationships">DependsOn</data>
+  <data key="relatdsaionships">DependsOn</data>
   <data key="labels">DependsOn</data>
   <data key="label">:TEST</data>
 </edge>
 <edge source="8" target="6">
-  <data key="relationships">DependsOn</data>
+  <data key="relatdsaionships">DependsOn</data>
   <data key="labels">DependsOn</data>
   <data key="label">:TEST</data>
 </edge>
