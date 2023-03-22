@@ -401,32 +401,32 @@
   <data key="licenseUrl">https://github.com/PPODschema/PPOD_FSL/blob/main/LICENSE.md</data>
   <data key="labels">:Component</data>
 </node>
-<edge source="3" target="1">
+<edge source="3" target="1" label="DependsOn">
   <data key="relatdsaionships">DependsOn</data>
   <data key="labels">DependsOn</data>
   <data key="label">:TEST</data>
 </edge>
-<edge source="3" target="2">
+<edge source="3" target="2" label="DependsOn">
   <data key="relatdsaionships">DependsOn</data>
   <data key="labels">DependsOn</data>
   <data key="label">:TEST</data>
 </edge>
-<edge source="4" target="1">
+<edge source="4" target="1" label="DependsOn">
   <data key="relatdsaionships">DependsOn</data>
   <data key="labels">DependsOn</data>
   <data key="label">:TEST</data>
 </edge>
-<edge source="6" target="4">
+<edge source="6" target="4" label="DependsOn">
   <data key="relatdsaionships">DependsOn</data>
   <data key="labels">DependsOn</data>
   <data key="label">:TEST</data>
 </edge>
-<edge source="7" target="6">
+<edge source="7" target="6" label="DependsOn">
   <data key="relatdsaionships">DependsOn</data>
   <data key="labels">DependsOn</data>
   <data key="label">:TEST</data>
 </edge>
-<edge source="8" target="6">
+<edge source="8" target="6" label="DependsOn">
   <data key="relatdsaionships">DependsOn</data>
   <data key="labels">DependsOn</data>
   <data key="label">:TEST</data>
