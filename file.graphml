@@ -399,22 +399,22 @@
   <data key="licenseUrl">https://github.com/PPODschema/PPOD_FSL/blob/main/LICENSE.md</data>
   <data key="labels">:Component</data>
 </node>
-<edge source="1" target="3">
+<edge source="3" target="1">
   <data key="relationship">DependsOn</data>
 </edge>
-<edge source="1" target="4">
+<edge source="3" target="2">
   <data key="relationship">DependsOn</data>
 </edge>
-<edge source="2" target="3">
+<edge source="4" target="1">
   <data key="relationship">DependsOn</data>
 </edge>
-<edge source="4" target="6">
+<edge source="6" target="4">
   <data key="relationship">DependsOn</data>
 </edge>
-<edge source="6" target="7">
+<edge source="7" target="6">
   <data key="relationship">DependsOn</data>
 </edge>
-<edge source="6" target="8">
+<edge source="8" target="6">
   <data key="relationship">DependsOn</data>
 </edge>
 </graph></graphml>
