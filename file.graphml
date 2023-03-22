@@ -404,31 +404,31 @@
 <edge source="3" target="1">
   <data key="relationship">DependsOn</data>
   <data key="labels">DependsOn</data>
-  <data key="label">TEST</data>
+  <data key="label">:TEST</data>
 </edge>
 <edge source="3" target="2">
   <data key="relationship">DependsOn</data>
   <data key="labels">DependsOn</data>
-  <data key="label">TEST</data>
+  <data key="label">:TEST</data>
 </edge>
 <edge source="4" target="1">
   <data key="relationship">DependsOn</data>
   <data key="labels">DependsOn</data>
-  <data key="label">TEST</data>
+  <data key="label">:TEST</data>
 </edge>
 <edge source="6" target="4">
   <data key="relationship">DependsOn</data>
   <data key="labels">DependsOn</data>
-  <data key="label">TEST</data>
+  <data key="label">:TEST</data>
 </edge>
 <edge source="7" target="6">
   <data key="relationship">DependsOn</data>
   <data key="labels">DependsOn</data>
-  <data key="label">TEST</data>
+  <data key="label">:TEST</data>
 </edge>
 <edge source="8" target="6">
   <data key="relationship">DependsOn</data>
   <data key="labels">DependsOn</data>
-  <data key="label">TEST</data>
+  <data key="label">:TEST</data>
 </edge>
 </graph></graphml>
