@@ -400,28 +400,28 @@
   <data key="licenseUrl">https://github.com/PPODschema/PPOD_FSL/blob/main/LICENSE.md</data>
   <data key="labels">:Component</data>
 </node>
-<edge source="1" target="3" id="DependsOn">
+<edge source="1" target="3">
   <data key="relationship">DependsOn</data>
-  <data key="label">DependsOn</data>
+  <data key="label">DEPENDSON</data>
 </edge>
-<edge source="1" target="4" id="DependsOn">
+<edge source="1" target="4">
   <data key="relationship">DependsOn</data>
-  <data key="label">DependsOn</data>
+  <data key="label">DEPENDSON</data>
 </edge>
-<edge source="2" target="3" id="DependsOn">
+<edge source="2" target="3">
   <data key="relationship">DependsOn</data>
-  <data key="label">DependsOn</data>
+  <data key="label">DEPENDSON</data>
 </edge>
-<edge source="4" target="6" id="DependsOn">
+<edge source="4" target="6">
   <data key="relationship">DependsOn</data>
-  <data key="label">DependsOn</data>
+  <data key="label">DEPENDSON</data>
 </edge>
-<edge source="6" target="7" id="DependsOn">
+<edge source="6" target="7">
   <data key="relationship">DependsOn</data>
-  <data key="label">DependsOn</data>
+  <data key="label">DEPENDSON</data>
 </edge>
-<edge source="6" target="8" id="DependsOn">
+<edge source="6" target="8">
   <data key="relationship">DependsOn</data>
-  <data key="label">DependsOn</data>
+  <data key="label">DEPENDSON</data>
 </edge>
 </graph></graphml>
