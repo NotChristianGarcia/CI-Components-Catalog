@@ -7,6 +7,7 @@
 <key id="restrictedToRole" for="node" attr.name="restrictedToRole" attr.type="boolean"/>
 <key id="componentVersion" for="node" attr.name="componentVersion" attr.type="long"/>
 <key id="biasAssessmentConducted" for="node" attr.name="biasAssessmentConducted" attr.type="boolean"/>
+<key id="labels" for="node" attr.name="labels" attr.type="string"/>
 <key id="usageMetricsCollected" for="node" attr.name="usageMetricsCollected" attr.type="boolean"/>
 <key id="trainingTutorialsUrl" for="node" attr.name="trainingTutorialsUrl" attr.type="string"/>
 <key id="trainingTutorialsAvailable" for="node" attr.name="trainingTutorialsAvailable" attr.type="boolean"/>
@@ -58,6 +59,7 @@
   <data key="trainingTutorialsAvailable">True</data>
   <data key="trainingTutorialsUrl">https://tapis-project.github.io/tutorials/</data>
   <data key="usageMetricsCollected">True</data>
+  <data key="labels">:Component</data>
 </node>
 <node id="2">
   <data key="id">EventEngine</data>
@@ -84,6 +86,7 @@
   <data key="trainingTutorialsAvailable">False</data>
   <data key="trainingTutorialsUrl"></data>
   <data key="usageMetricsCollected">True</data>
+  <data key="labels">:Component</data>
 </node>
 <node id="3">
   <data key="id">CameraTrapsEdgeSim</data>
@@ -112,6 +115,7 @@
   <data key="trainingTutorialsAvailable">False</data>
   <data key="trainingTutorialsUrl"></data>
   <data key="usageMetricsCollected">False</data>
+  <data key="labels">:Component</data>
 </node>
 <node id="4">
   <data key="id">PodsService</data>
@@ -139,6 +143,7 @@
   <data key="trainingTutorialsAvailable">True</data>
   <data key="trainingTutorialsUrl">https://tapis-project.github.io/tutorials/pods/intro/</data>
   <data key="usageMetricsCollected">True</data>
+  <data key="labels">:Component</data>
 </node>
 <node id="5">
   <data key="id">KrogerStoreClosure</data>
@@ -151,6 +156,7 @@
   <data key="publicAccess">True</data>
   <data key="componentVersion">Unknown</data>
   <data key="licenseUrl">Unknown</data>
+  <data key="labels">:Component</data>
 </node>
 <node id="6">
   <data key="id">VAReusableGUI</data>
@@ -163,6 +169,7 @@
   <data key="publicAccess">True</data>
   <data key="componentVersion">Unknown</data>
   <data key="licenseUrl">Unknown</data>
+  <data key="labels">:Component</data>
 </node>
 <node id="7">
   <data key="id">SFVADashboard</data>
@@ -175,6 +182,7 @@
   <data key="publicAccess">True</data>
   <data key="componentVersion">Unknown</data>
   <data key="licenseUrl">Unknown</data>
+  <data key="labels">:Component</data>
 </node>
 <node id="8">
   <data key="id">ComponentCatalog</data>
@@ -201,6 +209,7 @@
   <data key="trainingTutorialsAvailable">False</data>
   <data key="trainingTutorialsUrl"></data>
   <data key="usageMetricsCollected">False</data>
+  <data key="labels">:Component</data>
 </node>
 <node id="9">
   <data key="id">HARP</data>
@@ -214,6 +223,7 @@
   <data key="componentVersion">Unknown</data>
   <data key="licenseUrl">Unknown</data>
   <data key="sourceCodeUrl">https://github.com/ICICLE-ai/harp</data>
+  <data key="labels">:Component</data>
 </node>
 <node id="10">
   <data key="id">30080website</data>
@@ -234,6 +244,7 @@
   <data key="biasAssessmentConducted">False</data>
   <data key="publicAccess">True</data>
   <data key="restrictedToRole">False</data>
+  <data key="labels">:Component</data>
 </node>
 <node id="11">
   <data key="id">edgecomputingsimulator</data>
@@ -258,6 +269,7 @@
   <data key="usageMetricsCollected">False</data>
   <data key="publicAccess">True</data>
   <data key="restrictedToRole">False</data>
+  <data key="labels">:Component</data>
 </node>
 <node id="12">
   <data key="id">imagelabelingtool</data>
@@ -282,6 +294,7 @@
   <data key="usageMetricsCollected">False</data>
   <data key="publicAccess">True</data>
   <data key="restrictedToRole">False</data>
+  <data key="labels">:Component</data>
 </node>
 <node id="13">
   <data key="id">scouthelper</data>
@@ -308,6 +321,7 @@
   <data key="usageMetricsCollected">False</data>
   <data key="publicAccess">True</data>
   <data key="restrictedToRole">False</data>
+  <data key="labels">:Component</data>
 </node>
 <node id="14">
   <data key="id">23405setgpsboundaries</data>
@@ -332,6 +346,7 @@
   <data key="usageMetricsCollected">False</data>
   <data key="publicAccess">True</data>
   <data key="restrictedToRole">False</data>
+  <data key="labels">:Component</data>
 </node>
 <node id="15">
   <data key="id">softwarepilot</data>
@@ -355,6 +370,7 @@
   <data key="usageDocumentationUrl">https://pypi.org/project/SoftwarePilot/</data>
   <data key="usageMetricsCollected">False</data>
   <data key="publicAccess">True</data>
+  <data key="labels">:Component</data>
 </node>
 <node id="16">
   <data key="id">hello_icicle_auth_clients</data>
@@ -368,6 +384,7 @@
   <data key="componentVersion">Unknown</data>
   <data key="licenseUrl">Unknown</data>
   <data key="sourceCodeUrl">https://github.com/ICICLE-ai/hello_icicle_auth_clients</data>
+  <data key="labels">:Component</data>
 </node>
 <node id="17">
   <data key="id">PPOD_FSL</data>
@@ -381,6 +398,7 @@
   <data key="publicAccess">True</data>
   <data key="componentVersion">Unknown</data>
   <data key="licenseUrl">https://github.com/PPODschema/PPOD_FSL/blob/main/LICENSE.md</data>
+  <data key="labels">:Component</data>
 </node>
 <edge source="1" target="3" id="DependsOn">
   <data key="relationship">DependsOn</data>
